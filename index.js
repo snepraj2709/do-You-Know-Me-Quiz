@@ -1,13 +1,8 @@
 var name = prompt("enter your name ");
 console.log("welcome to quiz DO YOU KNOW ME " + name);
 var score = 0;
-
 var readlineSync = require("readline-sync");
-// var age = prompt("what's your age " + name);
-// let i = Number("age");
 
-// console.log("Your name is " + typeof name);
-// console.log("Your age is " + typeof i);
 const doYouKnowMe = [
   {
     question: "Where do I live ?",
@@ -48,6 +43,7 @@ function quiz(question, answer) {
   console.log("---------------");
   totalScore(score);
 }
+//print final score
 function totalScore(score) {
   console.log(name + " Your total score is: " + score);
 }
